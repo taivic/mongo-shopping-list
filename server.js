@@ -35,7 +35,7 @@ if (require.main === module) {
 exports.app = app;
 exports.runServer = runServer;
 
-var Item = require('./models/item');
+var Item = require('./models/items');
 
 app.get('/items', function(req, res) {
     Item.find(function(err, items) {
