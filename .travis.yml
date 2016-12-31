@@ -8,3 +8,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: RwNSKlk9dolPTkV78R+hNbduv7pfmNjcByxJXUIp0W1Vc+IK0QI6b7g3RRqxz8ilY/ighkjoVeT0MPLot9ChOkdpIeY26JLgcfHPWZeeMq+vqY5VPxi+p2A6WkBa+DqMywYRKlZJRWkIRpkNHT+2TTxfaFTAnCSLn8MUSEr9nyIkjbSozjl9+AwdbwY7TOA2o6pPRgQqG7GkW7Jd9BEeorwjcnS4batCKTgd7Y0gXbi9Y57MyQXG3Pi2nXJYOG6P/gaHoJWGGTbd+lfmEI1lP3CpPOn+4VhlXIZx//Q7tUC/71LGkLO5fTKd7J93RX2slAEEt1XzO3jF2wIoGWsicQxvsNlM+WRE07Z1qgq7+fvC/FIxJeYunwYIBNo2WlNasEVMepLftO/1l1ZAjbFevHEwlIzENv/xIH/hfthJLs2D92Lg/s7F1PAlMbjhhZCy78eMHUkkZFyCDHByV5QquHbRXcBO1W5PAmeTZylUbmouFQ5DyNRLJM/0Qxfe8Z9bSW3y567MpByRQ0yim65s5jQzeuvL6u0MUFXFxT/9yTYKu8mHc2v1B8tsP2aOd3KLDJbQlk4IvFjwr0dk3qOQRew18umy805JxYDKLKFUiSSPmvVqS/xbdgD8NkARvx1c/2V8tbHml6IFafv7mZHekIQ1o3raimjFt4EQcxKYGI8=
+  app: mongo-shopping-list
+  on:
+    repo: taivic/mongo-shopping-list
